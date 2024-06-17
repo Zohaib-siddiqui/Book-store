@@ -942,7 +942,6 @@ body.dark-theme{
     height: calc(var(--header-height) + 2rem);
     column-gap: 4rem;
   }
-
   .nav__link i{
     display: none;
   }
@@ -950,11 +949,12 @@ body.dark-theme{
   .nav__link span{
     display: block;
   }
-
-  .nav__menu {
+  .nav__menu{
+    display: contents;
+  }
+  .nav__list{
     display: flex;
-    width: auto;
-    justify-content: flex-end;
+    column-gap: 4rem;
   }
   .nav__link {
     font-weight: var(--font-medium);
@@ -1099,7 +1099,7 @@ body.dark-theme{
   }
   .nav__list{
     display: flex;
-    justify-content: center;
+    column-gap: 4rem;
   }
   .nav__actions{
     display: flex;
