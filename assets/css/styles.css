@@ -16,7 +16,7 @@
   --container-color: hsl(230, 100%, 97%);
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /* .5rem = 8px | 1rem = 16px ... */
   --body-font: "Montserrat", sans-serif;
   --second-font: "Montagu Slab", serif;
   --biggest-font-size: 2rem;
@@ -409,6 +409,12 @@ body.dark-theme{
   row-gap: 2.5rem;
 }
 
+.back__img{
+  position: absolute;
+  width: 100%;
+  height: 700px;
+}
+
 .home__data{
   text-align: center;
 }
@@ -416,10 +422,12 @@ body.dark-theme{
 .home__title{
   font-size: var(--biggest-font-size);
   margin-bottom: 1rem;
+  color: var(--first-color);
 }
 
 .home__description{
   margin-bottom: 2rem;
+  color: var(--white-color);
 }
 
 .home__images{
@@ -429,6 +437,7 @@ body.dark-theme{
 .home__article,
 .home__img{
   width: 220px;
+  height: 440px;
   transition: scale .4s;
 }
 
@@ -489,7 +498,8 @@ body.dark-theme{
 }
 
 .featured__img{
-  width: 150px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto .75rem;
 }
 
@@ -577,6 +587,7 @@ body.dark-theme{
 .discount__images{
   display: flex;
   justify-content: center;
+  background: transparent;
 }
 
 .discount__img-1,
@@ -697,6 +708,7 @@ body.dark-theme{
 
 .testimonial__img{
   width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin: 0 auto 1.5rem;
 }
@@ -1085,7 +1097,9 @@ body.dark-theme{
     padding-block: 7rem 2rem;
   }
   .home__data{
-    text-align: initial;
+    text-align: center;
+    backdrop-filter: blur(16px);
+    padding-bottom: 1rem;
   }
   .home__description{
     margin-bottom: 4rem;
